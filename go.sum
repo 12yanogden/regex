@@ -1,7 +1,5 @@
 github.com/12yanogden/bytes v0.0.0-20231228214048-f31e302faa3a h1:sKoMTp5LLxmyj3ynSHSPXMZM4TBTyPFeq8fcezFVh+w=
 github.com/12yanogden/bytes v0.0.0-20231228214048-f31e302faa3a/go.mod h1:8UNGUu2GQniLRVtxzuSbYqsD8gkZl+Jvs6uQlYtdSHM=
-github.com/12yanogden/errors v0.0.0-20231228214306-8b23b695188b h1:Aez54untSAhW3KDg59yEzkeYpLey76jJKGb6B9Rsb1c=
-github.com/12yanogden/errors v0.0.0-20231228214306-8b23b695188b/go.mod h1:TjLkJ8S1sJ/YmUsPhKzsIIX0oAgT/xxkxwMOMtgeaBg=
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/yuin/goldmark v1.4.13/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
 golang.design/x/clipboard v0.7.0 h1:4Je8M/ys9AJumVnl8m+rZnIvstSnYj1fvzqYrU3TXvo=
