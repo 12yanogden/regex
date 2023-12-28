@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/12yanogden/errors"
-	"github.com/12yanogden/regex/internal/regex"
+	regex "github.com/12yanogden/regex/internal"
 	"golang.design/x/clipboard"
 )
 
 func main() {
+	cmd := "pretty_regex"
 	args := os.Args[1:]
 	err := clipboard.Init()
 
@@ -18,9 +18,11 @@ func main() {
 	}
 
 	if len(args) == 0 {
-		errors.Scream("no arguments given")
+		fmt.Println(cmd + ": no arguments given")
+		os.Exit(1)
 	} else if len(args) > 1 {
-		errors.Scream(fmt.Sprintf("expected 1 argument, but %d arguments given.", len(args)))
+		fmt.Printf("%s: expected 1 argument, but %d arguments given\n", cmd, len(args))
+		os.Exit(1)
 	}
 
 	clipboard.Write(clipboard.FmtText, []byte(regex.Pretty(args[0])))
