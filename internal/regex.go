@@ -45,7 +45,7 @@ func Pretty(regex string) string {
 	return string(pretty)
 }
 
-func PrettyToRegex(pretty string) string {
+func Ugly(pretty string) string {
 	pretty = regexp.MustCompile("[\t ]*//.*").ReplaceAllString(pretty, "")
 	pretty = regexp.MustCompile("\n").ReplaceAllString(pretty, "")
 	pretty = regexp.MustCompile("[\t]*"+`\(`).ReplaceAllString(pretty, "(")

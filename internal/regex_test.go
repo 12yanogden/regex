@@ -20,7 +20,7 @@ func TestPretty(t *testing.T) {
 
 func TestReversibility(t *testing.T) {
 	expected := "^(([[:alnum:]]| )*)?=?$"
-	actual := PrettyToRegex(Pretty(expected))
+	actual := Ugly(Pretty(expected))
 
 	if expected != actual {
 		t.Fatal("\nExpected: " + expected + "\nActual: " + actual)
@@ -36,7 +36,7 @@ func TestPrettyWithCommentsToRegex(t *testing.T) {
 	)
 )`
 	expected := "(this(that))"
-	actual := PrettyToRegex(pretty)
+	actual := Ugly(pretty)
 
 	if expected != actual {
 		t.Fatal("\nExpected: " + expected + "\nActual: " + actual)
